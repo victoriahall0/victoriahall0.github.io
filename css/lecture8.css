@@ -1,0 +1,56 @@
+p {
+    font-size: 5vw;
+}
+
+#delay {
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    50% {
+        color: darkgreen;
+        font-size: 50vw;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.getbig {
+    animation: 3s infinite alternate getbig;
+}
+
+@keyframes .getbig {
+    form {
+        font-size: 1vw;
+    }
+
+    to {
+        font-size: 3vw;
+        color:blue;
+    }
+    
+}
+
+#hover {
+    font-size: 5vw;
+    transition-property: font-size;
+    transition-duration: 3s;
+    transition-delay: 0.25s;
+}
+
+#hover:hover {
+    font-size: 15vw;
+
+}
