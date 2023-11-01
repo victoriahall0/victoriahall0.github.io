@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Documentary</title>
+    <style>
+        button {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 5px solid royalblue;
+            background-color: lightblue;
+            color: black;
+            box-shadow: 1px 1px 2px black;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <button type="button">What's your favorite season?</button>
+        <button id="press">Halloween</button>
+        <h1 id="hover">Halloween</h1>
+        <b id="effect"></b>
+
+        <script>
+            const button = document.querySelector("button");
+            const press = document.getElementById("press");
+
+            button.addEventListener('click',updateName);
+            press.addEventListener('click', updatePress);
+
+            function updateName() {
+                let name = prompt("Enter a new name");
+                button.textContent = `My favorite season is: ${name}`;
+            }
+
+        </script>
+    </body>
+    </html>

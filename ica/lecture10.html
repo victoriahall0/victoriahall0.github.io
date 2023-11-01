@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Documentary</title>
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid royalblue;
+            background-color: rgb(104, 190, 210);
+            color: black;
+            box-shadow: 1px 1px 2px black;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px;
+        }
+    </style>
+    </head>
+    <body>
+        <button type="button">Player 1: Chris</button>
+        <div id="press" type="button">Press me</div>
+
+        <script>
+            const button = document.querySelector("button");
+            const press = document.getElemenById("press");
+
+            button.addEventListener('click',updateName);
+            press.addEventListener('click', updateName);
+
+            function updateName() {
+                let name = prompt("Enter a new name");
+                button.textContent = `PLayer 1: ${name}`;
+            }
+        </script>
+
+
+    </body>
+    </html>
