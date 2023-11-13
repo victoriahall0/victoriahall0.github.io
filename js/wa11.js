@@ -4,11 +4,11 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-const images = ["/img/pic1.jpg",
-                "/img/pic2.jpg",
-                "/img/pic3.jpg",
-                "/img/pic4.jpg",
-                "/img/pic5.jpg",]
+const images = ["/img/redpanda3.jpg.png",
+                "/img/redpanda4.jpg.jpg",
+                "/img/redpanda5.jpg.jpg",
+                "/img/red panda.jpg",
+                "/img/orca-facts.jpg",]
 
 const altText = {
     "image1": "A person's eye",
