@@ -12,7 +12,20 @@ function getRandom(length) {
 }
 
 function displayNumber() {
-    let phoneNumber = getRandom(length)
+    let Number = getRandom(length)
+
+    string = Number.toString();
+    let phoneNumber = "";
+    for (let i = 0; i < string.length; i++) {
+        if (i == 3) {
+            phoneNumber += "-";
+        }
+        if (i == 6) {
+            phoneNumber += "-";
+        }
+        phoneNumber += string[i];
+    }
+    
     numBox.textContent = phoneNumber;
 }
 

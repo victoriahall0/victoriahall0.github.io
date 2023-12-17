@@ -100,12 +100,3 @@ html {
     padding-bottom: 10px;
   }
   
-  
-  @media screen and (max-width: 600px) {
-    .app {
-      width: 100%;
-    }
-    .quote-text {
-      font-size: 18px;
-    }
-  }
